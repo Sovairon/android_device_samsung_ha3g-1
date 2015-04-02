@@ -34,14 +34,25 @@ vendor/firmware/bcm4339_A0.hcd
 vendor/firmware/bcm4339.hcd
 vendor/firmware/bcm4339_semco.hcd
 vendor/firmware/bcm4339_wisol.hcd
-vendor/firmware/BT_FW_VER_BCM4339_003.001.009.0055.0254_ORC_H-LTE.hcd
+vendor/firmware/BT_FW_VER_BCM4339_003.001.009.0055.0246_ORC_H-3G_SEMCO_B67.hcd
 
 # OemCrypto
 lib/liboemcrypto.so
 
 # Camera
-lib/hw/camera.universal5420.so:lib/hw/camera.vendor.universal5420.so
+lib/hw/camera.vendor.universal5420.so
+lib/libarcsoft_flawlessface.so
+lib/libarcsoft_nighthawk.so
+lib/libarcsoft_night_shot.so
+lib/libarcsoft_panorama_burstcapture.so
+lib/libarcsoft_picaction_manual.so
+lib/libarcsoft_picaction.so
+lib/libarcsoft_sensorndk.so
+lib/libarcsoft_skin_soften.so
+lib/libarcsoft_vdoinvideo.so
 lib/libexynoscamera.so
+lib/libliveframework.so
+lib/libsecnativefeature.so
 lib/libvdis.so
 
 # Widevine (DRM)
@@ -50,7 +61,7 @@ lib/libdrmdecrypt.so
 lib/libstagefright_hdcp.so
 lib/libhdcp2.so
 vendor/lib/libwvdrm_L1.so
-# lib/libWVphoneAPI.so
+lib/libWVphoneAPI.so
 vendor/lib/libWVStreamControlAPI_L1.so
 lib/drm/libdrmwvmplugin.so
 vendor/lib/libwvm.so
@@ -123,7 +134,6 @@ vendor/firmware/bcm2079xB5_pre_firmware.ncd
 # lib/hw/power.exynos5.so
 
 # Radio
-# lib/libril.so
 lib/libaudio-ril.so
 lib/libsec-ril.so
 lib/libsecnativefeature.so
@@ -144,3 +154,25 @@ etc/wifi/nvram_net.txt_wisol
 # Input (not exist anymore)
 # usr/idc/sec_e-pen.idc
 # usr/idc/sec_touchscreen.idc
+
+# S-Pen
+usr/idc/sec_e-pen.idc
+lib/libSPenBase.so
+lib/libSPenBeautify.so
+lib/libSPenBrush.so
+lib/libSPenChineseBrush.so
+lib/libSPenEngine.so
+lib/libSPenHSV.so
+lib/libSPenImageFilterLibs.so
+lib/libSPenInit.so
+lib/libSPenInkPen.so
+lib/libSPenMagicPen.so
+lib/libSPenMarker.so
+lib/libSPenModel.so
+lib/libSPenNativePen.so
+lib/libSPenPencil.so
+lib/libSPenPluginFW.so
+lib/libSPenScreenCodecDecoder.so
+lib/libSPenSkia.so
+lib/libSPenVIRecognition.so
+lib/libSPenVITextAll.so
