@@ -29,6 +29,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Audio
 PRODUCT_PACKAGES += \
+    audio.primary.universal5420 \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -212,6 +213,11 @@ PRODUCT_PACKAGES += \
     libcsc \
     libExynosOMX_Core \
     libOMX.Exynos.MP3.Decoder \
+    libOMX.Exynos.AVC.Encoder \
+    libOMX.Exynos.MPEG4.Decoder \
+    libOMX.Exynos.MPEG4.Encoder \
+    libOMX.Exynos.VP8.Decoder \
+    libOMX.Exynos.VP8.Encoder \
     libstagefrighthw \
 
 # Permissions
@@ -242,6 +248,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+    
+    
+# CPU producer to CPU consumer not supported 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bq.gpu_to_cpu_unsupported=1    
 
 # Power
 PRODUCT_PACKAGES += \
